@@ -106,10 +106,18 @@
   width: 24px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #register-page {
     position: relative;
     padding: 10px 0;
+  }
+
+  .register-card {
+    position: relative;
+    margin: 2rem auto;
+    top: 0;
+    left: 0;
+    transform: none;
   }
 
   .register-form .register-button {
