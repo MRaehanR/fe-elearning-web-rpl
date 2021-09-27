@@ -8,9 +8,14 @@ import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 function Register() {
   const [passwordShow, setPasswordShow] = useState(false);
+  const [confirmPasswordShow, setConfirmPasswordShow] = useState(false);
 
   const togglePasswordVisiblity = () => {
     setPasswordShow(passwordShow ? false : true);
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    setConfirmPasswordShow(confirmPasswordShow ? false : true);
   };
 
   return (
@@ -38,7 +43,7 @@ function Register() {
                       id="floatingInput"
                       placeholder="Username"
                     />
-                    <label htmlFor="floatingInput">Username</label>
+                    <label htmlFor="floatingInput">Nama Lengkap</label>
                   </div>
                 </div>
 
@@ -49,7 +54,7 @@ function Register() {
                       type="email"
                       className="form-control form-noborder"
                       id="floatingInput"
-                      placeholder="name@example.com"
+                      placeholder="Email"
                     />
                     <label htmlFor="floatingInput">Email</label>
                   </div>
@@ -63,9 +68,9 @@ function Register() {
                       type={passwordShow ? "text" : "password"}
                       className="form-control form-noborder"
                       id="floatingPassword"
-                      placeholder="Password"
+                      placeholder="Kata sandi"
                     />
-                    <label htmlFor="floatingPassword">Password</label>
+                    <label htmlFor="floatingPassword">Kata sandi</label>
                     <FontAwesomeIcon
                       onClick={togglePasswordVisiblity}
                       icon={passwordShow ? faEye : faEyeSlash}
@@ -73,6 +78,28 @@ function Register() {
                     />
                   </div>
                 </div>
+
+                <div className="form-field">
+                  <FontAwesomeIcon icon={faLock} className="icon-form" />
+
+                  <div className="form-floating">
+                    <input
+                      type={confirmPasswordShow ? "text" : "password"}
+                      className="form-control form-noborder"
+                      id="floatingPassword"
+                      placeholder="Konfirmasi kata sandi"
+                    />
+                    <label htmlFor="floatingPassword">
+                      Konfirmasi kata sandi
+                    </label>
+                    <FontAwesomeIcon
+                      onClick={toggleConfirmPasswordVisibility}
+                      icon={confirmPasswordShow ? faEye : faEyeSlash}
+                      className="password-visible fa-lg"
+                    />
+                  </div>
+                </div>
+
                 <Button
                   variant="primary"
                   type="submit"
