@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+.beranda-component {
+  background-color: #6d6bef;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue";
+  width: 100%;
+}
+.beranda-container {
+  height: 120%;
+}
+
+.beranda-title {
+  border-width: 0 0 1px 0;
+  color: white;
+  border-style: solid;
+  width: 70%;
+  border-color: #a2a2a2;
+}
+
+.beranda-h3 {
+  color: white;
+  font-size: 33px;
+  margin-top: 10px;
+}
+.beranda-desc {
+  color: white;
+  margin-top: 24px;
+}
+
+.beranda-container .beranda-btn {
+  border-radius: 50px;
+  width: 22rem;
+  height: 4.5rem;
+  font-size: 29px;
+  background-color: #fba322;
+
+  color: white;
+  margin-top: 73px;
+}
+.beranda-container .beranda-btn:hover {
+  color: white;
+  background-color: #fba322;
+}
+
+.beranda-container .beranda-btn:focus {
+  box-shadow: none;
+  shape-outside: none;
+  text-shadow: none;
+  background-color: #fba322;
+  color: white;
+}
+
+.beranda-h1 {
+  margin-top: 140px;
+}
+
+.beranda-orang {
+  padding-left: 150px;
+  margin-top: 100px;
+}
+
+.beranda-dipelajari {
+  width: 100%;
+  background-color: white;
+}
+
+.beranda-titlekecil {
+  font-size: 31px;
+
+  font-weight: bold;
+}
+
+.beranda-selengkapnya {
+  font-size: 19px;
+  border: none;
+  margin-left: 1107px;
+  font-style: italic;
+  background-color: white;
+  text-decoration: none;
+  color: #707070;
+}
+
+.beranda-selengkapnya:hover {
+  color: #707070;
+}
+
+.beranda-panah {
+  margin-left: 10px;
+}
+
+.beranda-header {
+  font-size: 31px;
+}
+
+.beranda-headers {
+  font-size: 31px;
+}
+.beranda-garis {
+  border-width: 0 0 5 px 0;
+  color: #b2b1f8;
+  border-style: solid;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 121px;
+  border-color: #b2b1f8;
+}
+.beranda-containers {
+  width: 100%;
+  background-color: white;
+}
+
+.beranda-jarak {
+  margin-bottom: 205px;
+}
+
+.beranda-jarak2 {
+  margin-bottom: 58px;
+}
+
+.beranda-jarak3 {
+  margin-bottom: 85px;
+}
+
+.beranda-jarak4 {
+  padding-top: 100px;
+}
