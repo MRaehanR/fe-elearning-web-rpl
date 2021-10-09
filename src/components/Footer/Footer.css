@@ -1,0 +1,25 @@
+.footer-container {
+    background-color: #6D6BEF;
+    color: #fff;
+    height: auto;    
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-body .footer-link a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+ .footer-link a {
+    margin-right: 4rem;
+    color: #fff;
+}
