@@ -2,7 +2,6 @@
 
 .beranda-component {
   background-color: #6d6bef;
-  margin-top: 50px;
   font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue";
@@ -113,7 +112,7 @@
 }
 
 .beranda-jarak {
-  margin-bottom: 205px;
+  margin-bottom: 20px;
 }
 
 .beranda-jarak2 {
