@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import { Container } from "react-bootstrap";
-import LogoRPL from "../../assets/LogoRPL.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import LogoRPL from '../../assets/LogoRPL.svg'
 import {
   faFacebookSquare,
   faInstagram,
@@ -17,7 +17,7 @@ function Footer() {
         <div className="footer-logo pt-3 pe-4">
           <img src={LogoRPL} alt="Logo RPL" />
         </div>
-        <div className="footer-body d-md-flex ps-5">
+        <div className="footer-body d-md-flex ps-md-5">
           <div className="footer-item">
             <div className="footer-title">About Us</div>
             <div className="footer-link">
