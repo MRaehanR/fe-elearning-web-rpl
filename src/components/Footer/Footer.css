@@ -23,3 +23,10 @@
     margin-right: 4rem;
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-body {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
