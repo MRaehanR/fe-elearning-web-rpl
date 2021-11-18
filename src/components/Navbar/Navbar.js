@@ -1,9 +1,58 @@
 import React from "react";
 import "./Navbar.css";
-import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Button,
+  Dropdown,
+} from "react-bootstrap";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
-function NavbarComp() {
+function NavbarComp(props) {
+  const handleLogout = () => {
+    localStorage.clear();
+    props.setUser(null);
+  };
+
+  let link;
+  let button;
+  if (props.user) {
+    link = (
+      <Nav.Link className="text-white px-0" href="#5">
+        Notifikasi
+      </Nav.Link>
+    );
+    button = (
+      <Dropdown className="button-nav-dropdown">
+        <Dropdown.Toggle
+          variant="outline-light"
+          className="outline-white shadow-none"
+        >
+          User
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item className="nav-dropdown-item">Profil</Dropdown.Item>
+          <Dropdown.Divider />
+          <Dropdown.Item className="nav-dropdown-item" onClick={handleLogout}>
+            Keluar
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    );
+  } else {
+    button = (
+      <Link to="/login">
+        <Button variant="outline-light" className="outline-white nav-btn">
+          Login
+        </Button>
+      </Link>
+    );
+  }
+
   return (
     <Navbar expand="lg" className="bg-test navbar" variant="dark">
       <Container>
@@ -34,10 +83,9 @@ function NavbarComp() {
                 Konfirmasi Pembayaran
               </NavDropdown.Item>
             </NavDropdown>
+            {link}
           </Nav>
-          <Button variant="outline-light" className="outline-white nav-btn">
-            Masuk
-          </Button>
+          {button}
         </Navbar.Collapse>
       </Container>
     </Navbar>

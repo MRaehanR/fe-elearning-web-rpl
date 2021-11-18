@@ -2,9 +2,13 @@
   background-color: #6d6bef;
 }
 
+.navbar a {
+  text-decoration: none;
+}
+
 .navbar,
 .nav-btn {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .outline-white {
@@ -52,12 +56,12 @@
 #basic-nav-dropdown {
   color: #fff;
   padding: 0.5rem 0 0.5rem 0;
+  position: relative;
 }
 
-.dropdown-menu {
+.nav-item .dropdown-menu {
   top: 0.8rem;
   right: 0.5rem;
-  width: 104px;
   border-radius: 10px;
 }
 
@@ -67,4 +71,18 @@
   font-size: 17px;
   font-weight: 500;
   white-space: inherit;
+}
+
+.button-nav-dropdown {
+  position: relative;
+}
+
+.button-nav-dropdown .dropdown-menu {
+  top: -2px;
+  left: -1.5rem;
+  border-radius: 10px;
+}
+
+.button-nav-dropdown .dropdown-toggle::after {
+  display: none;
 }

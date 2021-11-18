@@ -82,6 +82,11 @@
   box-shadow: none;
 }
 
+.register-form .warning-icon {
+  color: red;
+  margin-right: 1rem;
+}
+
 .register-check {
   margin-top: 1rem;
   text-align: center;
