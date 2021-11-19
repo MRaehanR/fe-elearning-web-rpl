@@ -55,8 +55,9 @@ function Register(props) {
         .then((res) => {
           console.log(res.data.failed);
           localStorage.setItem("token", res.data.token);
-          localStorage.setItem("user", res.data.user);
+          localStorage.setItem("username", res.data.user.username);
           setLogin(true);
+          props.setUser(res.data.user);
         })
         .catch((err) => {
           console.log(err.response.data.description);
@@ -71,9 +72,9 @@ function Register(props) {
     }
   };
 
-  // if (login === true) {
-  //   return <Redirect to="/" />;
-  // }
+  if (login === true) {
+    return <Redirect to="/" />;
+  }
 
   return (
     <div id="register-page">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Login.css";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import loginImage from "../../assets/loginImage.svg";
@@ -36,12 +36,12 @@ function Login(props) {
       .then((res) => {
         console.log(res.data.failed);
         localStorage.setItem("token", res.data.token);
-        localStorage.setItem("user", res.data.user);
+        localStorage.setItem("username", res.data.user.username);
         setLogin(true);
-        // props.setUser(res.data.user);
+        props.setUser(res.data.user);
       })
       .catch((err) => {
-        console.log(err.response.data.description);
+        console.log(err.data);
         setError(
           <div className="text-danger">
             <FontAwesomeIcon icon={faExclamation} className="warning-icon" />

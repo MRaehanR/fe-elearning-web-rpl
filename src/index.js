@@ -6,14 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import axios from "axios";
 import { BrowserRouter } from "react-router-dom";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://e-learningweb.herokuapp.com";
 axios.defaults.headers.common = {
   "Content-Type": "application/json",
   Accept: "application/json",
 };
 // axios.defaults.withCredentials = true;
-// axios.defaults.headers["Authorization"] =
-//   "Bearer " + localStorage.getItem("token");
+axios.defaults.headers["Authorization"] =
+  "Bearer " + localStorage.getItem("token");
 
 ReactDOM.render(
   <BrowserRouter>

@@ -17,6 +17,8 @@ function NavbarComp(props) {
     props.setUser(null);
   };
 
+  const username = localStorage.getItem("username");
+
   let link;
   let button;
   if (props.user) {
@@ -31,7 +33,7 @@ function NavbarComp(props) {
           variant="outline-light"
           className="outline-white shadow-none"
         >
-          User
+          {username}
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
