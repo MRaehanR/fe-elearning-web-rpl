@@ -1,9 +1,15 @@
 import React from "react";
+import './Pelajaran.css'
 import CardPelajaranList from "../../components/CardPelajaran/CardPelajaranList";
 import foto from "../../assets/BukuPelajaran.svg";
+import NavbarComp from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function Pelajaran() {
   return (
+
+    <div className="pelajaran-component">
+    <NavbarComp/>
     <div className={`d-flex flex-column align-items-center`}>
       <div>
         <div className="mt-5 mb-5">
@@ -15,6 +21,8 @@ function Pelajaran() {
           <CardPelajaranList />
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 }
